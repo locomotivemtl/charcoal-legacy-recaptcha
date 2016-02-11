@@ -1,0 +1,29 @@
+{
+	"type": "charcoal-module",
+	"version": "1.0.0",
+	"name": "locomotivemtl/charcoal-recaptcha",
+	"description": "A utility module providing support for Google reCAPTCHA.",
+	"license": "© 2016 — Locomotive",
+	"keywords": [ "charcoal", "locomotive", "recaptcha" ],
+	"support": {
+		"issues": "https://github.com/locomotivemtl/charcoal-legacy-recaptcha/issues",
+		"source": "https://github.com/locomotivemtl/charcoal-legacy-recaptcha"
+	},
+	"authors": [
+		{
+			"name": "Chauncey McAskill",
+			"email": "chauncey@locomotive.ca"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"google/recaptcha": "~1.1",
+		"locomotivemtl/charcoal-composer-installer": "@dev"
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/mducharme/charcoal-composer-installer"
+		}
+	]
+}

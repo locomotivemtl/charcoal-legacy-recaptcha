@@ -1,0 +1,7 @@
+"source","target","location"
+"An unknown error or malformed response has occurred.","Une erreur inconnue ou une réponse malformée est survenus.","/Users/Locomotive/Production/Clients/Plaisirs Gastronomiques/plaisirsgastronomiques.com/src.svn/www/modules/utils/code/charcoal.trait.google.recaptcha.php:74"
+"Are you a robot?","Êtes-vous un robot?","/Users/Locomotive/Production/Clients/Plaisirs Gastronomiques/plaisirsgastronomiques.com/src.svn/www/modules/utils/code/charcoal.trait.google.recaptcha.php:73"
+"Please contact us through our general inquiry form.","S'il vous plaît contactez-nous via notre formulaire de demande de renseignements généraux.","/Users/Locomotive/Production/Clients/Plaisirs Gastronomiques/plaisirsgastronomiques.com/src.svn/www/modules/utils/code/charcoal.trait.google.recaptcha.php:72"
+"The CAPTCHA response is invalid or malformed.","La réponse de CAPTCHA est invalide ou malformé.","/Users/Locomotive/Production/Clients/Plaisirs Gastronomiques/plaisirsgastronomiques.com/src.svn/www/modules/utils/code/charcoal.trait.google.recaptcha.php:111"
+"The CAPTCHA response is missing.","La réponse de CAPTCHA est manquante.","/Users/Locomotive/Production/Clients/Plaisirs Gastronomiques/plaisirsgastronomiques.com/src.svn/www/modules/utils/code/charcoal.trait.google.recaptcha.php:106"
+"The secret parameter is invalid or malformed.","Le paramètre secret est invalide ou malformé.","/Users/Locomotive/Production/Clients/Plaisirs Gastronomiques/plaisirsgastronomiques.com/src.svn/www/modules/utils/code/charcoal.trait.google.recaptcha.php:101"

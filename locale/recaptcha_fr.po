@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Locomotive
+# This file is distributed under the same license as the Charcoal package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Charcoal 1\n"
+"Report-Msgid-Bugs-To: mat@locomotive.ca\n"
+"POT-Creation-Date: 2015-11-03 09:34-0500\n"
+"PO-Revision-Date: 2015-11-03 09:40-0500\n"
+"Last-Translator: Chauncey McAskill <chauncey@locomotive.ca>\n"
+"Language-Team: fr_FR <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /Users/Locomotive/Production/Clients/Plaisirs Gastronomiques/plaisirsgastronomiques.com/src.svn/www/modules/utils/code/charcoal.trait.google.recaptcha.php:74
+msgid "An unknown error or malformed response has occurred."
+msgstr "Une erreur inconnue ou une réponse malformée est survenus."
+
+#: /Users/Locomotive/Production/Clients/Plaisirs Gastronomiques/plaisirsgastronomiques.com/src.svn/www/modules/utils/code/charcoal.trait.google.recaptcha.php:73
+msgid "Are you a robot?"
+msgstr "Êtes-vous un robot?"
+
+#: /Users/Locomotive/Production/Clients/Plaisirs Gastronomiques/plaisirsgastronomiques.com/src.svn/www/modules/utils/code/charcoal.trait.google.recaptcha.php:72
+msgid "Please contact us through our general inquiry form."
+msgstr "S'il vous plaît contactez-nous via notre formulaire de demande de renseignements généraux."
+
+#: /Users/Locomotive/Production/Clients/Plaisirs Gastronomiques/plaisirsgastronomiques.com/src.svn/www/modules/utils/code/charcoal.trait.google.recaptcha.php:111
+msgid "The CAPTCHA response is invalid or malformed."
+msgstr "La réponse de CAPTCHA est invalide ou malformé."
+
+#: /Users/Locomotive/Production/Clients/Plaisirs Gastronomiques/plaisirsgastronomiques.com/src.svn/www/modules/utils/code/charcoal.trait.google.recaptcha.php:106
+msgid "The CAPTCHA response is missing."
+msgstr "La réponse de CAPTCHA est manquante."
+
+#: /Users/Locomotive/Production/Clients/Plaisirs Gastronomiques/plaisirsgastronomiques.com/src.svn/www/modules/utils/code/charcoal.trait.google.recaptcha.php:101
+msgid "The secret parameter is invalid or malformed."
+msgstr "Le paramètre secret est invalide ou malformé."
