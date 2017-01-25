@@ -40,17 +40,44 @@ trait Trait_Google_Recaptcha
 	 */
 	public static function is_recaptcha_available()
 	{
-		if ( ! isset(self::$_has_recaptcha) ) {
+		if ( self::$_has_recaptcha === null ) {
 			static::$_has_recaptcha = false;
 
-			if ( class_exists('ReCaptcha') ) {
+			$class = '\ReCaptcha\ReCaptcha';
+			$conf  = 'apis.recaptcha';
+			if ( class_exists($class) ) {
 				if ( isset(Charcoal::$config['apis']['recaptcha']) ) {
 					$config = Charcoal::$config['apis']['recaptcha'];
 
 					if ( isset($config['public_key']) && isset($config['private_key']) ) {
 						static::$_has_recaptcha = true;
+					} else {
+						$message = sprintf(
+							'Settings [%s] not found in application config',
+							$conf
+						);
 					}
+				} else {
+					$message = sprintf(
+						'Settings [%s] not found in application config',
+						$conf
+					);
 				}
+			} else {
+				$message = sprintf('Class [%s] not found', $class);
+			}
+
+			if ( static::$_has_recaptcha === false ) {
+				$message = sprintf('Google reCAPTCHA is unavailable: %s', $message);
+				error_log($message);
+				Charcoal::debug([
+					'level' => 'error',
+					'msg'   => $message,
+					'code'  => 'charcoal.recaptcha.unavailable',
+					'trace' => [
+						'method' => get_called_class().'::'.__FUNCTION__
+					]
+				]);
 			}
 		}
 
@@ -123,9 +150,9 @@ trait Trait_Google_Recaptcha
 	/**
 	 * Validate Google's ReCaptcha response.
 	 *
-	 * @param mixed[] $feedback If $feedback is provided, then it is filled with any validation messages.
-	 *
-	 * @return bool|mixed[] Returns TRUE if the ReCaptcha was successful, otherwise an array of messages.
+	 * @param  array $feedback If $feedback is provided, then it is filled with any validation messages.
+	 * @return boolean Returns TRUE if the ReCaptcha was successful,
+	 *     FALSE if it failed. If ReCAPTCHA is unavialble, NULL is returned.
 	 */
 	public function validate_recaptcha(array &$feedback = [])
 	{
@@ -141,8 +168,7 @@ trait Trait_Google_Recaptcha
 
 			if ( $response->isSuccess() ) {
 				$valid = true;
-			}
-			else {
+			} else {
 				self::parse_recaptcha_response_errors($response, $feedback['recaptcha']);
 			}
 		}
